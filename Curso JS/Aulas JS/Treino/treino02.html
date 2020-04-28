@@ -22,12 +22,19 @@
 
     <script>
     
+        function pulaLinha(){
+            document.write('<br>')
+        }
+        
         var num1 = Number(prompt('Digite um número'))
         var num2 = Number(prompt('Digite o segundo número'))
         var num3 = Number(prompt('Digite o terceir número'))
+        
         var resultado = (num1 + num2 +num3)/3
+
         document.write(`A média entre ${num1} + ${num2} e ${num3} é = <strong>${resultado.toFixed(2)}<strong>`)
-        document.write('<br/>')
+        pulaLinha()
+        
         var cond = resultado >= 1? 'Teste Realizado' : 'Teste não realizado'
         document.write(cond)
 
