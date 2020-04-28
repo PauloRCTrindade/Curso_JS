@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: aqua;
+            color: black;
+            font: 20pt Arial;
+        }
+    </style>
+    <h1></h1>
+    
+
+</head>
+<body>
+    
+
+
+
+    <script>
+    
+        var num1 = Number(prompt('Digite um número'))
+        var num2 = Number(prompt('Digite o segundo número'))
+        var num3 = Number(prompt('Digite o terceir número'))
+        var resultado = (num1 + num2 +num3)/3
+        document.write(`A média entre ${num1} + ${num2} e ${num3} é = <strong>${resultado.toFixed(2)}<strong>`)
+        document.write('<br/>')
+        var cond = resultado >= 1? 'Teste Realizado' : 'Teste não realizado'
+        document.write(cond)
+
+    </script>
+</body>
+
+</html>
