@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write("<br>")
+        }
+        function print(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        var vitorias = parseInt(prompt('Informe o número de vitórias do seu time'))
+        var empate = parseInt(prompt('Informe o número de empate de seu time'))
+        var resultado = vitorias * 3 + empate
+        
+        
+        print(`O número de pontos do seu time é <strong>${resultado}</strong>`)
+        pulaLinha()
+
+        if (resultado > 30){
+            print('<strong>Seu time tá bem na fita!!</strong>')
+        }
+
+        if (resultado <= 30){
+            print('<strong>Seu time ta zuado kkkk</strong>')
+        }
+
+
+
+
+    </script>
+</body>
+</html>
