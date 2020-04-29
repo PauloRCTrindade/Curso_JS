@@ -8,23 +8,39 @@
 <body>
 
     <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function print(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
         function calculaImc(peso,altura){
 
             return peso / (altura * altura)
-
-
         }
       
-      peso1 = 50
-      altura1 = 1.75
+      nome = prompt('Informa seu nome')
+      peso = Number(prompt('Informe seu peso'))
+      altura = Number(prompt('Informe sua altura'))
+      imc = calculaImc(peso,altura).toFixed(2)
 
-      peso2 = 80
-      altura2 = 1.60
+        print(` Olá <strong>${nome}</strong>,Seu IMC é ${imc}`)
+        pulaLinha()
+        
 
-        imc1 = calculaImc(peso1,altura1)
-        imc2 = calculaImc(peso2,altura2)
-
-        document.write(calculaImc(peso1,altura1),'<br>',calculaImc(peso2,altura2))
+        if (imc < 18.5){
+            print('Você está raquítico')
+        }
+        if(imc > 30){
+            print('Você está obeso')
+        }
+        if (imc >= 18.5 && imc <=30){
+            print('Você está na média')
+        }
+        
         
 
     
