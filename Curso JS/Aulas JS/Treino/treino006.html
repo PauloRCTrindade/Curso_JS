@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+
+        function calculaImc(){
+            imc = peso / (altura * altura)
+            document.write(` Olá ${nome} seu IMC É ${imc.toFixed(1)}`)
+           
+        }
+
+        var nome = prompt('Me diga seu nome')
+        var peso = Number(prompt('Me diga sua peso'))
+        var altura = Number(prompt('Me diga sua altura'))
+        
+        calculaImc()
+
+    </script>
+</body>
+</html>
