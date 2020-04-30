@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input>
+    <button>ENTER</button>
+
+    <Script>
+
+        var pc = Math.round(Math.random()* 2)
+        var input = document.querySelector('input')
+        input.focus()
+
+
+        function valida(){
+            if(input.value == pc){
+            alert('Você acertou')
+            }
+        else{
+            alert('Você ERROU')
+            }
+
+        input.value = '' 
+        input.focus()
+        }
+
+        var enter = document.querySelector('button')
+        enter.onclick = valida
+        
+               
+        
+
+
+    </Script>
+
+
+
+
+
+
+
+
+</body>
+</html>
