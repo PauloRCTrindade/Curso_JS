@@ -11,21 +11,36 @@
             document.write('<br>')
         }
         function print(texto){
-            document.write(texto)
+            alert(texto)
+            pulaLinha()
         }
 
 
-        var computador = Math.round(Math.random()*10) 
-        var jogador = parseInt(prompt('Digite o número que estou penando'))
+        var computador = Math.round(Math.random()*5) 
+        var tentativa = 1
          
-         if (computador == jogador){
-             print('Parabens!!! você acertou')
-         }
-         else{
-             print('Você errou!!')
-         }
+         while(tentativa <= 3){
+            var jogador = parseInt(prompt(`Digite o número que estou penando? TENTATIVA:${tentativa}`))
+         
+
+            if (jogador == computador){
+             
+               print('Parabens!!! você acertou')
+            break
+            }
+            else{
+            
+                print('Você errou!!')
+            
+            }
+
+
+         tentativa++
+         
+            }
+
         pulaLinha()
-        print(`Eu pensei <strong>${computador}</strong> e você digitou <strong>${jogador}</trong>`)
+        print(`Eu pensei em ${computador}`)
 
 
 
