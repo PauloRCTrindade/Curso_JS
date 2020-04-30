@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function pulaLinha(){
+            document.write('<br>')
+        }
+        function print(texto){
+            document.write(texto)
+            pulaLinha()
+        }
+
+        var totalpessoas = parseInt(prompt('Digite o número de pessoas'))
+        var numero = 1
+        var totalIdade = 0
+
+        while(numero <= totalpessoas){
+            var idade = parseInt(prompt(`Digite a idade do faliar ${numero}`))
+            totalIdade = totalIdade + idade
+            numero++
+        }
+        var media = totalIdade / totalpessoas
+
+        print(`A media de idades dos ${totalpessoas} familiares é igual a:a ${media}`)
+        if (media <=18){
+            print('Vocês são bem jovens')
+        }
+        if (media >18 && media <=40){
+            print('Vocês já são bem grandinhos')
+        }
+        if(media >40 ){
+            print('A melhor idade está a caminho')
+        }
+        
+
+
+
+    </script>
+</body>
+</html>
