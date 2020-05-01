@@ -3,46 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TREINO</title>
+<input>
+<button>ENTER</button>
+
+
 </head>
 <body>
-    <input>
-    <button>ENTER</button>
-
-    <Script>
-
-        var pc = Math.round(Math.random()* 2)
-        var input = document.querySelector('input')
-        input.focus()
-
-
-        function valida(){
-            if(input.value == pc){
-            alert('Você acertou')
+    <script>
+        function print(texto){
+            document.write(texto)
+        }
+        function sorteia(){
+            return Math.round(Math.random()*10)  
+        }
+        function lista(quantidade){
+            pc = []
+            num = 1
+            while(num<quantidade){
+                pc.push(sorteia())
             }
-        else{
-            alert('Você ERROU')
-            }
-
-        input.value = '' 
-        input.focus()
         }
 
+
+
+
+
+        var pc = lista(5)
+
         var enter = document.querySelector('button')
-        enter.onclick = valida
+        var input = document.querySelector('input')
+        input.focus()
+        enter.onclick = verifica
         
-               
+        function verifica(){
+            achou = false
+            for(posicao = 0;posicao < pc.length;posicao++){
+
+                if(pc[posicao] == input.value){
+                    alert('ACERTOU')
+                    achou = true
+                    break
+                }   
+            }
+            if(achou == false){
+                
+                alert('ERROU')
+            }
+            input.value = ""
+            input.focus()
+
+        }
+        
+        
         
 
 
-    </Script>
 
-
-
-
-
-
-
+    </script>
 
 </body>
 </html>
