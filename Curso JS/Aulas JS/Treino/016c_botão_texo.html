@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vamos jogar ?</h1>
+    <h2>Aperte play para começar</h2>
+    <p>Para jogar é muito simples, digite o número que você acha que estou pensando.</p>
+
+    
+    <input/>
+    <button>Enter</button>
+    
+        <script>
+            function sorteia(){
+                return Math.round(Math.random()*10)
+                }
+            function lista(quantidade){
+                var pc = []
+                var num = 1
+                while(num<=quantidade){
+                    var numAleatorio = sorteia()
+                    if(numAleatorio !=0){
+                        var achou = false
+                        for(var posicao = 0;posicao<pc.length;posicao++){
+                            if(pc[posicao]==numAleatorio){
+                                achou = true
+                                break
+                            }
+                        }
+                        if (achou == false){
+                            pc.push(numAleatorio)
+                            num++
+                        }
+                    }         
+                }   
+                return pc
+            }
+
+            var pc = lista(5) 
+            var input = document.querySelector('input')
+            input.focus()
+        
+            function verifica(){
+                var achou = false
+                for(var posicao = 0; posicao < pc.length; posicao++){
+                    if(input.value == pc[posicao]){
+                        alert('Parabéns!!!!!! Você ACERTOU!!!!')
+                        achou = true 
+                        break
+                    }
+                }
+                if(achou == false){
+                    alert('ERROOOOOUUUUU!!!!!!')
+                 
+                }
+                input.value = ''
+                input.focus()
+            }
+            var enter = document.querySelector('button')
+            enter.onclick = verifica
+    
+        </script>
+</body>
+</html>
+
