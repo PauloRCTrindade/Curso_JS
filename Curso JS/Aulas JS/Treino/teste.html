@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function print(texto){
+            document.write(texto)
+        }
+        function sorteia(){
+            return Math.round(Math.random()*10)
+        }
+        function list(quantidade){
+            var lista = []
+            var num = 1            
+                while(num <= quantidade){
+                    var numAleatorio = sorteia()
+                    if(numAleatorio != 0){
+                        var achei = false
+                        for(var posicao = 0;posicao < lista.length ;posicao++){
+                            if(lista[posicao] == numAleatorio){
+                                achei = true
+                                break
+                            }
+                        }
+                        if(achei == false){
+                            lista.push(numAleatorio)
+                            num++
+                        }
+                        
+                        
+                    }
+                }
+                
+            return lista
+        }
+
+
+
+
+
+        var listaNumeros = list(5)
+        print(listaNumeros)
+        
+    </script>
+</body>
+</html>
