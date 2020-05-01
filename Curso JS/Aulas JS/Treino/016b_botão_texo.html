@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vamos jogar ?</h1>
+    <h2>Aperte play para começar</h2>
+    <p>Para jogar é muito simples, digite o número que você acha que estou pensando.</p>
+
+    
+    <input/>
+    <button>Enter</button>
+    
+        <script>
+            var pc = Math.round(Math.random()*2)
+            var input = document.querySelector('input')
+            input.focus()
+        
+    
+
+            function verifica(){
+                if(input.value == pc){
+                    alert('Parabéns!!!!!! Você ACERTOU!!!!')
+                }
+                else{
+                    alert('ERROOOOOUUUUU!!!!!!')
+                    }
+            input.value = ''
+            input.focus()
+            }
+        
+            var enter = document.querySelector('button')
+            enter.onclick = verifica
+    
+        </script>
+
+
+
+
+</body>
+</html>
+
