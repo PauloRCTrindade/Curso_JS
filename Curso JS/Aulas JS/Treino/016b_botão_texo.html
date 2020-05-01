@@ -16,23 +16,36 @@
     <button>Enter</button>
     
         <script>
-            var pc = Math.round(Math.random()*2)
+            var pc = [5,7,10,12,3]
             var input = document.querySelector('input')
             input.focus()
         
     
 
             function verifica(){
-                if(input.value == pc){
+                var achou = false
+                for(var posicao = 0; posicao < pc.length; posicao++){
+                    if(input.value == pc[posicao]){
                     alert('Parabéns!!!!!! Você ACERTOU!!!!')
+                    achou = true 
+                    break
                 }
-                else{
+                }
+                if(achou == false){
                     alert('ERROOOOOUUUUU!!!!!!')
-                    }
-            input.value = ''
-            input.focus()
-            }
+                 
+                   }
+
+                input.value = ''
+                input.focus()
+                }
+                  
+            
+            
         
+            
+
+
             var enter = document.querySelector('button')
             enter.onclick = verifica
     
