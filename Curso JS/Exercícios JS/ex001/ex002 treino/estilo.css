@@ -1,0 +1,42 @@
+body{
+    background: rgb(87, 166, 255);
+    color: cornsilk;
+    text-align: center;
+
+}
+
+section{
+    margin: auto;
+    font: normal 30px Arial;
+    color: black;
+    background:white;
+    text-align: left;
+    width: 600px;
+    height: auto;
+    border-radius: 30px;
+    text-indent: 30px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.466);
+
+}
+div#res{
+    font: normal 30px Arial;
+    
+}
+input#txt{
+    margin-top: 35px;
+    width: 200px;
+    height: 35px;
+    font: normal 30px Arial;
+}
+input#enter{
+    width: auto;
+    height: auto;
+    font: normal 30px Arial;
+    box-shadow: 5px 2px rgba(0, 0, 0, 0.596);
+    margin-left: 200px;
+
+
+}
+footer{
+    text-align: center;
+}
