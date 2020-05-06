@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de imagem</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de imagem</h1>
+    </header>
+    
+    <section>
+        <div>
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txt" id="txt">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masulino</label>
+                <input id = 'sex' type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+                
+            </p>
+            <p>
+                <input id='enter'type="button" value="ENTER" onclick="verifica()">
+            </p>
+            <br>
+        </div>
+        <div id = 'res'> </div>
+        <br>
+    </section>
+    <footer>
+        <p>&copy;Paulo Trindade</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
