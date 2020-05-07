@@ -1,0 +1,22 @@
+body{
+    background: rgb(64, 169, 255);
+    font: normal 15px Arial;
+    color: white;
+    text-align: center;
+
+}
+section{
+    background: white;
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    color: black;
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.466);
+    margin: auto;
+}
+footer{
+
+}
+input#enter{
+    height: 40px;;
+}
