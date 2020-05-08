@@ -1,0 +1,17 @@
+body{
+    background: rgb(96, 255, 96);
+    color: white;
+    font: normal 25px Arial;
+
+}
+section{
+    width: 480px;
+    height: auto;
+    background: white;
+    color: black;
+    font: normal 20px Arial;
+    border-radius: 10px;
+}
+select{
+    width: 300px;
+}
