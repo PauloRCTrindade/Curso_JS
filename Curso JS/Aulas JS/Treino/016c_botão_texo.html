@@ -26,8 +26,8 @@
                     var numAleatorio = sorteia()
                     if(numAleatorio !=0){
                         var achou = false
-                        for(var posicao = 0;posicao<pc.length ;posicao++){
-                            if(pc[posicao]==numAleatorio){
+                        for(var pos in pc){
+                            if(pc[pos]==numAleatorio){
                                 achou = true
                                 break
                             }
