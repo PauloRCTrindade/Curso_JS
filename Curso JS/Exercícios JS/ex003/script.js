@@ -9,7 +9,7 @@ function enter(){
         for(c = 0; c <= 10; c++){
             var item = document.createElement('option')
             item.text = `${n} x ${c} = ${n*c}`
-            item.value = `tab${c}`
+            //item.value = `tab${c}`
             tab.appendChild(item)
         }
     }
