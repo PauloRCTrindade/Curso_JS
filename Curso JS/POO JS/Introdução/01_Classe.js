@@ -1,6 +1,6 @@
 
-import{Cliente} from '\rC:\Users\Paulo Trindade\OneDrive\Documentos\Meu_GitHub\Curso_JS\Curso JS\POO JS\Introdução\Cliente.js'
-import{Cliente} from '\rC:\Users\Paulo Trindade\OneDrive\Documentos\Meu_GitHub\Curso_JS\Curso JS\POO JS\Introdução\ContaCorrente.js'
+import{Cliente} from 'C:\Users\Paulo Trindade\OneDrive\Documentos\Meu_GitHub\Curso_JS\Curso JS\POO JS\Introdução\Cliente.js'
+import{ContaCorrente} from 'C:\Users\Paulo Trindade\OneDrive\Documentos\Meu_GitHub\Curso_JS\Curso JS\POO JS\Introdução\ContaCorrente.js'
 
 const cliente01 = new Cliente()
 cliente01.nome = 'Paulo'
