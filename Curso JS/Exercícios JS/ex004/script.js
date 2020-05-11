@@ -26,6 +26,7 @@ function adicionar(){
         let item = document.createElement('option')
         item.text = `O Valor ${num.value} foi adicionado`
         select.appendChild(item)
+        res.innerHTML = ''
     }else{
         alert('Valor inválido ou já encontra na lista')
     }
@@ -34,10 +35,26 @@ function adicionar(){
 
 }
 function finalizar(){
-    let lista = valores
-    lista = lista.sort()
-    menor = lista[0]
-    maior = l
-    res.innerHTML = `O maior valor  ${maior} e o menor valor é ${menor}`
+    if(valores.length == 0){
+        alert('Adicione valores')
+    }else{
+
     
+        let lista = valores.length
+        let menor = valores[0]
+        let maior = valores[0]
+        let soma = 0
+        for( let pos in valores){
+            soma += valores[pos]
+            if(valores[pos] > maior)
+                maior = valores[pos]
+
+            if(valores[pos] < menor)
+                menor = valores[pos]
+        }
+        
+        let media = soma / lista
+        res.innerHTML = ''
+        res.innerHTML = `Você adicionou um total de ${lista} valores <br><br>O maior valor da lista é ${maior} e o menor valor é ${menor}<br><br> A soma entre eles é ${soma}<br><br> A média entre eles é ${media.toFixed(1)}`
+    } 
 }
