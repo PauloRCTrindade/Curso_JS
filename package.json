@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/PauloRCTindade/Curso_JS#readme",
   "dependencies": {
+    "graceful-fs": "^4.2.4",
+    "gulp-update": "0.0.2",
     "natives": "^1.1.6"
   }
 }
