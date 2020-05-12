@@ -1,7 +1,7 @@
 {
-  "name": "bytebank",
+  "name": "curso_js",
   "version": "1.0.0",
-  "description": "projeto bytebank para seus clientes",
+  "description": "Meu curso de Java script",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,11 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/PauloRCTindade/Curso_JS.git"
   },
-  "author": "Paulo Trindade",
-  "license": "ISC",
+  "author": "",
   "type": "module",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/PauloRCTindade/Curso_JS/issues"
   },
-  "homepage": "https://github.com/PauloRCTindade/Curso_JS#readme"
+  "homepage": "https://github.com/PauloRCTindade/Curso_JS#readme",
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
 }
