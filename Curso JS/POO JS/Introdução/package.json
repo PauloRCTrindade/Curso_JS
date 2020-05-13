@@ -1,0 +1,27 @@
+{
+  "name": "curso_js",
+  "version": "1.0.0",
+  "description": "Meu curso de Java script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PauloRCTindade/Curso_JS.git"
+  },
+  "author": "Paulo trindade",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PauloRCTindade/Curso_JS/issues"
+  },
+  "homepage": "https://github.com/PauloRCTindade/Curso_JS#readme",
+  "dependencies": {
+    "graceful-fs": "^4.2.4",
+    "gulp-update": "0.0.2",
+    "natives": "^1.1.6",
+    "node": "^14.2.0"
+  },
+  "devDependencies": {}
+}
