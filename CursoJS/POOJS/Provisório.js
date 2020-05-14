@@ -2,6 +2,8 @@ class Cliente{
     nome;
     cpf;
     rg;
+
+    
 }
 class ContaCorrente{
     agencia;
