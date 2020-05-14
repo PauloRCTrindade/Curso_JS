@@ -1,13 +1,39 @@
 class Cliente{
-    nome;
-    cpf;
-    rg;
-
     
+    get(){
+        this._nome = nome
+        this._cpf = cpf
+    }
+    
+    constructor(nome,cpf){
+        this._nome = nome
+        this._cpf = cpf
+    }
 }
-class ContaCorrente{
-    agencia;
-    _saldo = 500;
+class Conta{
+    set cliente(novoDado){
+        if(novoDado instanceof Cliente){
+          
+        }  this._cliente = novoDado
+    }
+    
+    get cliente(){
+        return this.cliente
+    }
+
+    get saldo(){
+        return this._saldo
+    }
+
+    get agencia(){
+        return this._agencia
+    }
+
+    constructor(agencia,cliente,saldo){
+        this._agencia = agencia
+        this._cliente = cliente
+        this._saldo = saldo
+    }
     sacar(valor){
         if(this._saldo >= valor){
             this._saldo -= valor
@@ -27,15 +53,26 @@ class ContaCorrente{
     
 }
 
-const cliente01 = new Cliente()
-cliente01.nome = 'Paulo'
-cliente01.cpf = 012501250125
-cliente01.rg = 1236547
+class ContaCorrente extends Conta{
+    constructor(agencia,cliente,saldo){
+        super(agencia,cliente,saldo)
+    }
+}
 
-const contaCorrentePaulo = new ContaCorrente()
-contaCorrentePaulo_saldo = 1000
-contaCorrentePaulo.agencia = 2121
+class ContaPoupanca extends Conta{
+    constructor(agencia,cliente,saldo){
+        super(agencia,cliente,saldo)
+    }
+}
+
+const cliente01 = new Cliente('Paulo',08914952665 )
+const cliente02 = new Cliente('Rafael',1234564569 )
+
+contaCorrentePaulo = new ContaCorrente(1001,cliente01,0)
+contaPoupancaPaulo = new ContaPoupanca(1001,cliente01,0)
 
 
-const valorSacado = contaCorrentePaulo.sacar(200)
-console.log(valorSacado)
+contaCorrenteRafael = new ContaCorrente(2002,cliente02,0)
+contaPoupancaRafael = new ContaPoupanca(2002,cliente02,0)
+console.log(contaPoupancaPaulo)
+console.log(contaPoupancaRafael)
